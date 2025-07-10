@@ -1,7 +1,5 @@
 
 import streamlit as st
-import pdfkit
-import tempfile
 
 
 # Configuración general
@@ -78,31 +76,4 @@ if area and niveles:
     st.write(f"Informe: ${informe:,.0f} MXN")
     st.subheader(f"💰 Total: ${total:,.0f} MXN")
 
-    # Botón para generar PDF
-    if st.button("📄 Generar PDF"):
-        html = f"""
-        <h1>Presupuesto Geotecnico</h1>
-        <p><strong>Proyecto:</strong> {nombre_proyecto}</p>
-        <p><strong>Ubicacion:</strong> {ubicacion}</p>
-        <p><strong>Area:</strong> {area} m2</p>
-        <p><strong>Niveles:</strong> {niveles}</p>
-        <p><strong>Tipo de sondeo:</strong> {tipo_sondeo}</p>
-        <p><strong>Numero de sondeos:</strong> {num_sondeos}</p>
-        <p><strong>Profundidad por sondeo:</strong> {profundidad} m</p>
-        <p><strong>Total estimado:</strong> ${total:,.0f} MXN</p>
-        """
-
-        with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp_file:
-            pdfkit.from_string(html, tmp_file.name)
-            with open(tmp_file.name, "rb") as file:
-                st.download_button(
-                    label="⬇️ Descargar PDF",
-                    data=file.read(),
-                    file_name="cotizacion_geotecnica.pdf",
-                    mime="application/pdf"
-                )
-
-
-if ubicacion == "Guadalajara":
-    st.write("Ubicación: Guadalajara")
-
+    
