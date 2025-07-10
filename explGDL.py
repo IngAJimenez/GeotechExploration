@@ -7,7 +7,7 @@ st.set_page_config(page_title="Presupuesto Geotécnico", page_icon="📊")
 
 st.title("📊 Cálculo de Presupuesto Geotécnico")
 st.markdown("Para proyectos de hasta 2000 m2 y 10 niveles")
-st.markdown("Version de prueva GTRN")
+st.markdown("Version de prueba, desarrollado por GTRN")
 
 # Ingreso de datos del proyecto
 st.header("📝 Datos del Proyecto")
