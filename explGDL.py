@@ -5,7 +5,7 @@ import streamlit as st
 # Configuración general
 st.set_page_config(page_title="Presupuesto Geotécnico", page_icon="📊")
 
-st.title("📊 Cálculo de Presupuesto Geotécnico")
+st.title("📊 Cálculadora de Exploración Geotécnica")
 st.markdown("Para proyectos de hasta 2000 m2 y 10 niveles")
 st.markdown("Version de prueba, desarrollado por GTRN")
 
@@ -62,19 +62,22 @@ if area and niveles:
     st.write(f"Profundidad estimada por sondeo: {profundidad} m")
 
     # Precios base
-    precio_por_m = 1000
-    pu_laboratorio = 500
-    laboratorio = num_sondeos * profundidad * pu_laboratorio
-    movilizacion = 4000
-    informe = 5000
-    total_sondeo = num_sondeos * profundidad * precio_por_m
-    total = total_sondeo + laboratorio + movilizacion + informe
+    #precio_por_m = 1000
+    #pu_laboratorio = 500
+    #laboratorio = num_sondeos * profundidad * pu_laboratorio
+    #movilizacion = 4000
+    #informe = 5000
+    #total_sondeo = num_sondeos * profundidad * precio_por_m
+    #total = total_sondeo + laboratorio + movilizacion + informe
 
-    st.header("📄 Cotizacion Estimada")
-    st.write(f"Total sondeos: ${total_sondeo:,.0f} MXN, considerando {precio_por_m} MXN por m de profundidad")
-    st.write(f"Laboratorio: ${laboratorio:,.0f} MXN, considerando {pu_laboratorio} MXN por m de profundidad")
-    st.write(f"Movilizacion: ${movilizacion:,.0f} MXN")
-    st.write(f"Informe: ${informe:,.0f} MXN")
-    st.subheader(f"💰 Total: ${total:,.0f} MXN")
+    st.header("💰 Cotizacion Estimada")
+    st.write("📩Contáctenos a proyectos@geotecniaterranova.com")
+    st.write("✅o por Whatsapp https://wa.link/vai3cy") 
+
+    #st.write(f"Total sondeos: ${total_sondeo:,.0f} MXN, considerando {precio_por_m} MXN por m de profundidad")
+    #st.write(f"Laboratorio: ${laboratorio:,.0f} MXN, considerando {pu_laboratorio} MXN por m de profundidad")
+    #st.write(f"Movilizacion: ${movilizacion:,.0f} MXN")
+    #st.write(f"Informe: ${informe:,.0f} MXN")
+    #st.subheader(f"💰 Total: ${total:,.0f} MXN")
 
     
