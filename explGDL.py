@@ -7,7 +7,9 @@ st.set_page_config(page_title="Presupuesto Geotécnico", page_icon="📊")
 
 st.title("📊 Cálculadora de Exploración Geotécnica")
 st.markdown("Para proyectos de hasta 2000 m2 y 10 niveles")
-st.markdown("Version de prueba, desarrollado por GTRN")
+st.markdown("<center><h5>Made by Geotecniapps</h5></center>", unsafe_allow_html=True)
+st.warning("⚠️ **Descargo de Responsabilidad:** Esta aplicación es una herramienta educativa y no reemplaza la evaluación de un ingeniero geotecnico calificado. Siempre consulta a un profesional para el diseño final.")
+st.link_button("Volver a Geotecniapps", url="https://geotecniapps.com/", type='primary')
 
 # Ingreso de datos del proyecto
 st.header("📝 Datos del Proyecto")
