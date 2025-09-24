@@ -9,6 +9,7 @@ st.set_page_config(page_title="Presupuesto Geotécnico", page_icon="📊")
 #titulo y descripción de la app
 st.set_page_config(page_title="GTN | GEOEXPLO GDL", page_icon=":material/sort:", layout="centered")
 st.markdown("<center><h2>📊 CALCULADORA DE EXPLORACIÓN GEOTÉCNICA </h2></center>", unsafe_allow_html=True)
+st.markdown("<center><h3>Version gratuita </h3></center>", unsafe_allow_html=True)
 st.markdown("<center><h5>Made by Geotecniapps.com</h5></center>", unsafe_allow_html=True)
 
 
@@ -34,8 +35,8 @@ st.divider()
 
 st.write("La profundidad de los sondeos está en función del número de niveles")
 niveles = st.number_input("Número de niveles", min_value=1, step=1)
-st.info("El número de niveles considera solo niveles superiores a nivel de calle. En este dato no considerar sótanos.")
-nivel_PB = st.number_input("Nivel de de planta baja o desde el nivel inferior del último sótano cuando existan medido desde el nivel de terreno natural (m)", max_value=0)
+st.info("El número de niveles considera solo niveles superiores a nivel de calle, para este dato no considerar sótanos.")
+nivel_PB = st.number_input("Nivel de planta baja o desde el nivel inferior del último sótano cuando existan medido desde el nivel de terreno natural (m)", max_value=0)
 
 
 BTN_calc = st.button("CALCULAR", type='primary')
