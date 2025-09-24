@@ -65,7 +65,7 @@ if BTN_calc:
     elif niveles == 8:
         profundidad = 14
    elif niveles == 9:
-        profundidad = 14 
+        profundidad = 14
     elif niveles == 10:
         profundidad = 16
     elif niveles > 10:
