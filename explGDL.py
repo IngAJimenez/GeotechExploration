@@ -7,7 +7,7 @@ st.set_page_config(page_title="Presupuesto Geotécnico", page_icon="📊")
 
 
 #titulo y descripción de la app
-st.set_page_config(page_title="GTN | GEOEXPLO GDL", page_icon=":material/landslide:", layout="centered")
+st.set_page_config(page_title="GTN | GEOEXPLO GDL", page_icon=":material/sort:", layout="centered")
 st.markdown("<center><h2>📊 CALCULADORA DE EXPLORACIÓN GEOTÉCNICA </h2></center>", unsafe_allow_html=True)
 st.markdown("<center><h5>Made by Geotecniapps.com</h5></center>", unsafe_allow_html=True)
 
