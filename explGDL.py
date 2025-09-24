@@ -29,11 +29,11 @@ ubicacion = st.selectbox("Ubicación", ["Guadalajara", "Zapopan"])
 st.divider()
 
 st.write("El número de sondeos está en función del área de desplante de la construcción")
-area = st.number_input("Área de construcción (m²)", min_value=0)
+area = st.number_input("Área de construcción (m²)", min_value=1)
 st.divider()
 
 st.write("La profundidad de los sondeos está en función del número de niveles")
-niveles = st.number_input("Número de niveles", min_value=1)
+niveles = st.number_input("Número de niveles", min_value=1, step=1)
 st.info("El número de niveles considera solo niveles superiores a nivel de calle. En este dato no considerar sótanos.")
 nivel_PB = st.number_input("Nivel de de planta baja o desde el nivel inferior del último sótano cuando existan medido desde el nivel de terreno natural (m)", max_value=0)
 
@@ -53,12 +53,19 @@ if BTN_calc:
         profundidad = 5
     elif niveles == 3:
         profundidad = 7
-    elif niveles == 4 or 5:
+    elif niveles == 4:
         profundidad = 9
-    elif niveles == 6 or 7:
+
+    elif niveles == 5:
+        profundidad = 9
+    elif niveles == 6:
         profundidad = 12
-    elif niveles == 8 or 9:
+    elif niveles == 7:
+        profundidad = 12
+    elif niveles == 8:
         profundidad = 14
+   elif niveles == 9:
+        profundidad = 14 
     elif niveles == 10:
         profundidad = 16
     elif niveles > 10:
