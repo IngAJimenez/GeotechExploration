@@ -48,26 +48,26 @@ if BTN_calc:
             #Determinar la profundidad de sondeos
        # NumeroDeNiveles = float(input('¿Cual es el NÚMERO DE NIVELES del proyecto? '))
 
-    if niveles = 1:
+    if niveles == 1:
         profundidad = 4
-    elif niveles = 2:
+    elif niveles == 2:
         profundidad = 5
-    elif niveles = 3:
+    elif niveles == 3:
         profundidad = 7
-    elif niveles = 4:
+    elif niveles == 4:
         profundidad = 9
 
-    elif niveles = 5:
+    elif niveles == 5:
         profundidad = 9
-    elif niveles = 6:
+    elif niveles == 6:
         profundidad = 12
-    elif niveles = 7:
+    elif niveles == 7:
         profundidad = 12
-    elif niveles = 8:
+    elif niveles == 8:
         profundidad = 14
-    elif niveles = 9:
+    elif niveles == 9:
         profundidad = 14
-    elif niveles = 10:
+    elif niveles == 10:
         profundidad = 16
     elif niveles > 10 :
         profundidad = ">10"
