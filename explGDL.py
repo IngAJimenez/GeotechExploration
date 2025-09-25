@@ -105,7 +105,9 @@ if BTN_calc:
     
     st.write(f"Profundidad estimada por sondeo: {profundidad} m")
     st.info("Esta profundidad es desde el nivel de planta baja o desde el nivel inferior del último sótano cuando existan")
-    st.success(f"La profundidad total del sondeo debe ser de : {profundidad - nivel_PB} m desde el nivel de terreno natural")
+
+    if profundidad <> ">10":
+        st.success(f"La profundidad total del sondeo debe ser de : {profundidad - nivel_PB} m desde el nivel de terreno natural")
 
     if profundidad == ">10":
         st.warning("Para proyectos mayores de 10 niveles, la profundidad de los sondeos deberá ser tal que el incremento de esfuerzos no sea mayor de aproximadamente el 10% de los esfuerzos efectivos iniciales. Tocará al geotécnico determinar esas profundidades, y a la Dirección General de Obras Públicas aprobarlas.")
@@ -115,9 +117,9 @@ if BTN_calc:
     st.warning("⚠️ **Nota Importante:** En caso de encontrarse roca antes de alcanzar la profundidad mínima requerida, en construcciones de diez o más niveles deberá perforarse al menos 3 m dentro de la roca para verificar que el manto sea continuo. Si la construcción será menor de diez niveles, en vez de perforar en roca se podrá optar por realizar sondeos adicionales para constatar la continuidad del manto rocoso.")
    
 
-    st.header("💰 Si desea una Cotizacion")
-    st.write("📩Contácte a proyectos@geotecniaterranova.com")
-    st.write("✅o por Whatsapp https://wa.link/vai3cy") 
+    #st.header("💰 Si desea una Cotizacion")
+    #st.write("📩Contácte a proyectos@geotecniaterranova.com")
+    #st.write("✅o por Whatsapp https://wa.link/vai3cy") 
 
 
 
