@@ -110,7 +110,7 @@ if BTN_calc:
         st.success(f"La profundidad total del sondeo debe ser de : {profundidad - nivel_PB} m desde el nivel de terreno natural")
 
     if profundidad == ">10":
-        st.warning("Para proyectos mayores de 10 niveles, la profundidad de los sondeos deberá ser tal que el incremento de esfuerzos no sea mayor de aproximadamente el 10% de los esfuerzos efectivos iniciales. Tocará al geotécnico determinar esas profundidades, y a la Dirección General de Obras Públicas aprobarlas.")
+        st.success("Para proyectos mayores de 10 niveles, la profundidad de los sondeos deberá ser tal que el incremento de esfuerzos no sea mayor de aproximadamente el 10% de los esfuerzos efectivos iniciales. Tocará al geotécnico determinar esas profundidades, y a la Dirección General de Obras Públicas aprobarlas.")
     
     st.divider()
 
