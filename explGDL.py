@@ -106,7 +106,7 @@ if BTN_calc:
     st.write(f"Profundidad estimada por sondeo: {profundidad} m")
     st.info("Esta profundidad es desde el nivel de planta baja o desde el nivel inferior del último sótano cuando existan")
 
-    if profundidad <> ">10":
+    if profundidad != ">10":
         st.success(f"La profundidad total del sondeo debe ser de : {profundidad - nivel_PB} m desde el nivel de terreno natural")
 
     if profundidad == ">10":
