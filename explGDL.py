@@ -100,7 +100,7 @@ if BTN_calc:
     
     st.write(f"Número de sondeos: {num_sondeos}")
     if num_sondeos == ">4":
-        st.warning("Para áreas de construcción mayores a 1000 m2, el número de sondeos estará determinado en función de la variabilidad del terreno , y tocará al especialista geotécnico determinar el número de sondeos y a la Dirección General de Obras Públicas aprobarlo.")
+        st.success("Para áreas de construcción mayores a 1000 m2, el número de sondeos estará determinado en función de la variabilidad del terreno , y tocará al especialista geotécnico determinar el número de sondeos y a la Dirección General de Obras Públicas aprobarlo.")
     
     
     st.write(f"Profundidad estimada por sondeo: {profundidad} m")
